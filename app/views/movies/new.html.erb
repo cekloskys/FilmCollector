@@ -19,3 +19,9 @@
 	</p>
 	<input type="submit" value="Create">
 </form>
+
+<% if flash[:errors] %>
+	<% flash[:errors].each do |e| %>
+	<p><%= e %></p>
+	<% end %>
+<% end %>

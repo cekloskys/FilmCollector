@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   post "actors" => "actors#create"
   get "movies" => "movies#index"
   get "movies/new" => "movies#new"
+  post "movies" => "movies#create"
+  get "actors/:id" => "actors#show"
 end
