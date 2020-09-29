@@ -7,4 +7,10 @@ Rails.application.routes.draw do
   post "movies" => "movies#create"
   get "actors/:id" => "actors#show"
   get "movies/:id" => "movies#show"
+  get "actors/:id/edit" => "actors#edit"
+  patch "actors/:id" => "actors#update"
+  delete "actors/:id" => "actors#destroy"
+  get "movies/:id/edit" => "movies#edit"
+  patch "movies/:id" => "movies#update"
+  delete "movies/:id" => "movies#destroy"
 end
