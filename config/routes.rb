@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get "movies/:id/edit" => "movies#edit"
   patch "movies/:id" => "movies#update"
   delete "movies/:id" => "movies#destroy"
+  get "appearances" => "appearances#index"
+  post "appearances" => "appearances#create"
 end
